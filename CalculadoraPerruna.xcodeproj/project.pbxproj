@@ -118,10 +118,10 @@
 		712D745525E89EDF00757637 /* CalculadoraPerruna */ = {
 			isa = PBXGroup;
 			children = (
-				7A02A4E125FC2CFC009AE365 /* Utils */,
-				7A02A4C525FA8639009AE365 /* Resources */,
 				7A02A4BE25FA85DB009AE365 /* Scenes */,
 				7A02A4C425FA8627009AE365 /* Extensions */,
+				7A02A4E125FC2CFC009AE365 /* Utils */,
+				7A02A4C525FA8639009AE365 /* Resources */,
 				712D745625E89EDF00757637 /* AppDelegate.swift */,
 				712D749625E8A3E800757637 /* SceneDelegate.swift */,
 				712D746425E89EE500757637 /* Info.plist */,
