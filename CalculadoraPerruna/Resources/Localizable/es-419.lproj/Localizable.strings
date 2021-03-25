@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  CalculadoraPerruna
+
+  Created by Saul Alberto Cortez Garcia on 17/03/21.
+  
+*/
+"main.instructions" = "Desliza el hueso para cambiar la edad";
+"main.humanAge" = "años humanos";
+"main.dogAges" = "años perrunos";
+"main.dogAge" = "año perruno";
+
+//Information
+"info.title" = "Edad de tu perrijo";
+"info.description" = "Se desarrolló una fórmula para convertir la edad de tu perro en años humanos. Esta investigación está basada en cambios en el ADN a lo largo del tiempo.\n\nEl tiempo de vida de los perros puede variar, sin embargo,  todos exhiben una trayectoria de desarrollo, fisiológica y patológica similar.\n\nPara lograr esto, se extrajeron muestras de sangre de 320 personas, con edades entre 1 y 103 años. Asimismo de 104 labradores, desde cachorros hasta de 16 años.\n\nLa comparación con los metilomas humanos revela una relación no lineal que traduce los años del perro al humano, lo cual permitió derivar una fórmula para calcular la edad humana con la de los perros.";
+"info.linkTitle" = "Links para mayor información";
+
