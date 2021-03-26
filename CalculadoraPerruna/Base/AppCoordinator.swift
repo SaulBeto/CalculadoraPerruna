@@ -16,8 +16,7 @@ class AppCoordinator: Coordinator {
     }
     
     func start() {
-        
-        goToOnboarding()
+        UserDefaults.standard.bool(forKey: "isAlreadyOnboarding") ? goToHome() : goToOnboarding()
         navigationTheme()
     }
     
@@ -25,6 +24,7 @@ class AppCoordinator: Coordinator {
         
         UIBarButtonItem.appearance().setTitleTextAttributes([.font: UIFont.boldSystemFont(ofSize: 14)], for: UIControl.State())
         UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.white, .font: UIFont.boldSystemFont(ofSize: 14)]
+        UINavigationBar.appearance().isHidden = true
         UINavigationBar.appearance().barTintColor = .orange
         UINavigationBar.appearance().tintColor = .black
         UINavigationBar.appearance().isTranslucent = false
@@ -39,6 +39,13 @@ extension AppCoordinator {
         let onboardingCoordinator = OnboardingCoordinator()
         onboardingCoordinator.start()
         window.rootViewController = onboardingCoordinator.navigationController
+    }
+    
+    func goToHome() {
+        let homeCoordinator = HomeCoordinator(navigation: UINavigationController())
+        homeCoordinator.start()
+        window.rootViewController = homeCoordinator.navigationController
+
     }
     
 }

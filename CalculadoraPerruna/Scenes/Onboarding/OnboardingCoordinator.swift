@@ -16,19 +16,12 @@ class OnboardingCoordinator: Coordinator {
     init() {
         
         onboardingViewController = getViewController(for: .onboarding, with: OnboardingViewController.typeName) as? OnboardingViewController
-//        homeViewController.viewModel = HomeViewModel()
         onboardingViewController.coordinator = self
         
     }
     
     func start() {
-        
         navigationController = UINavigationController(rootViewController: onboardingViewController)
-        navigationController.navigationBar.isHidden = true
-
-        if UserDefaults.standard.bool(forKey: "isOnboarding") {
-            goToHome()
-        }
     }
       
 }
@@ -36,7 +29,7 @@ class OnboardingCoordinator: Coordinator {
 extension OnboardingCoordinator {
     
     func goToHome() {
-       let homeCoordinator = HomeCoordinator(navigation: navigationController)
+        let homeCoordinator = HomeCoordinator(navigation: navigationController)
         homeCoordinator.start()        
     }
     

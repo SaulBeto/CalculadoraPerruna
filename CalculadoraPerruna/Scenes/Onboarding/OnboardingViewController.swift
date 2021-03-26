@@ -87,7 +87,7 @@ class OnboardingViewController: UIViewController {
     
     @IBAction func skipButtonTapped(_ sender: Any) {
         coordinator?.goToHome()
-        UserDefaults.standard.set(true, forKey: "isOnboarding")
+        UserDefaults.standard.set(true, forKey: "isAlreadyOnboarding")
     }
     
 }
