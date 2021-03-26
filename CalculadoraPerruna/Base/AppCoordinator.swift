@@ -25,7 +25,7 @@ class AppCoordinator: Coordinator {
         
         UIBarButtonItem.appearance().setTitleTextAttributes([.font: UIFont.boldSystemFont(ofSize: 14)], for: UIControl.State())
         UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.white, .font: UIFont.boldSystemFont(ofSize: 14)]
-        UINavigationBar.appearance().barTintColor = .purple
+        UINavigationBar.appearance().barTintColor = .orange
         UINavigationBar.appearance().tintColor = .black
         UINavigationBar.appearance().isTranslucent = false
         UIBarButtonItem.appearance(whenContainedInInstancesOf: [UISearchBar.self]).setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white], for: .normal)

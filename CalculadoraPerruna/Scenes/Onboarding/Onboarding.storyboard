@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0L5-x8-QWF">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding View Controller-->
+        <scene sceneID="xxK-1z-oX7">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingViewController" id="0L5-x8-QWF" customClass="OnboardingViewController" customModule="CalculadoraPerruna" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CSb-No-s3h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygJ-wW-bXU">
+                                <rect key="frame" x="16" y="812" width="382" height="30"/>
+                                <state key="normal" title="Omitir"/>
+                                <connections>
+                                    <action selector="skipButtonTapped:" destination="0L5-x8-QWF" eventType="touchUpInside" id="6hH-71-bwM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="q9G-p9-Pai"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ygJ-wW-bXU" firstAttribute="leading" secondItem="q9G-p9-Pai" secondAttribute="leading" constant="16" id="Vu7-IA-3RL"/>
+                            <constraint firstItem="q9G-p9-Pai" firstAttribute="trailing" secondItem="ygJ-wW-bXU" secondAttribute="trailing" constant="16" id="cLJ-nF-prK"/>
+                            <constraint firstItem="q9G-p9-Pai" firstAttribute="bottom" secondItem="ygJ-wW-bXU" secondAttribute="bottom" constant="20" id="fqa-yc-Ers"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="skipOnboardingButton" destination="ygJ-wW-bXU" id="cxX-KH-SKz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Ha-Bn-N7b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3" y="99"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

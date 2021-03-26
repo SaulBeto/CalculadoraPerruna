@@ -9,6 +9,14 @@ import Foundation
 import UIKit
 import AudioToolbox
 
+enum ProjectStoryboard: String {
+    
+    case onboarding = "Onboarding"
+    case home = "Home"
+    case information = "Information"
+}
+
+
 enum Vibration {
       case error
       case success

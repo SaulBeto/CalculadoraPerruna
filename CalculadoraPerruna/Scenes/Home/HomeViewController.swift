@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DogAgeViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     @IBOutlet weak var ageSlider: UISlider!
     @IBOutlet weak var backGroundIndicatorView: UIView!
@@ -21,6 +21,8 @@ class DogAgeViewController: UIViewController {
     var dogAge: DogAge = DogAge()
     private var previousStepValue: CGFloat = 0
     private var step: Float = 1
+    var coordinator: HomeCoordinator?
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
