@@ -22,8 +22,9 @@ class OnboardingCoordinator: Coordinator {
     }
     
     func start() {
-        navigationController.navigationBar.isHidden = true
         navigationController = UINavigationController(rootViewController: onboardingViewController)
+        navigationController.navigationBar.isHidden = true
+
     }
       
 }
