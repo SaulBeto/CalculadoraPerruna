@@ -5,6 +5,16 @@
   Created by Saul Alberto Cortez Garcia on 17/03/21.
   
 */
+
+//Onboarding
+"onboard.firstTitle" = "Conoce los años humanos de tu perro";
+"onboard.secondTitle" = "Nueva fórmula";
+"onboard.firstDescription" = "¿No sabes cuantos años humanos tiene tu perro? ¡Averígualo!";
+"onboard.secondDescription" = "Estudio revela nueva fórmula para etapas de la vida canina";
+"onboard.skip" = "Skip";
+"onboard.start" = "Start";
+
+//Home
 "main.instructions" = "Slide the bone to change the age";
 "main.humanAge" = "human years";
 "main.dogAges" = "years dog";

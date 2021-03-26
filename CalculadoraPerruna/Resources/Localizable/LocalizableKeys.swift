@@ -9,6 +9,15 @@ import Foundation
 
 struct LocalizableKeys {
     
+    struct Onboarding {
+        static let firstScreenTitle = "onboard.firstTitle".localized
+        static let secondScreenTitle = "onboard.secondTitle".localized
+        static let firstScreenDesc = "onboard.firstDescription".localized
+        static let secondScreenDesc = "onboard.secondDescription".localized
+        static let skip = "onboard.skip".localized
+        static let start = "onboard.start".localized
+    }
+    
     struct Principal {
         static let instructions = "main.instructions".localized
         static let humanAge = "main.humanAge".localized

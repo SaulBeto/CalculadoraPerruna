@@ -164,8 +164,8 @@
 		7A02A4BE25FA85DB009AE365 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				7AA80403260D555E00EA7078 /* Onboarding */,
 				712D746125E89EE500757637 /* LaunchScreen.storyboard */,
+				7AA80403260D555E00EA7078 /* Onboarding */,
 				7A02A4BF25FA85E3009AE365 /* Home */,
 				7A02A4C025FA85EC009AE365 /* Information */,
 			);
