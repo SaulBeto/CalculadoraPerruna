@@ -7,10 +7,10 @@
 */
 
 //Onboarding
-"onboard.firstTitle" = "Conoce los años humanos de tu perro";
-"onboard.secondTitle" = "Nueva fórmula";
-"onboard.firstDescription" = "¿No sabes cuantos años humanos tiene tu perro? ¡Averígualo!";
-"onboard.secondDescription" = "Estudio revela nueva fórmula para etapas de la vida canina";
+"onboard.firstTitle" = "Know your dog's human years";
+"onboard.secondTitle" = "New formula";
+"onboard.firstDescription" = "Do you know how human years your dog is? Find it out!";
+"onboard.secondDescription" = "Study reveals new formula for canine life stages";
 "onboard.skip" = "Skip";
 "onboard.start" = "Start";
 
