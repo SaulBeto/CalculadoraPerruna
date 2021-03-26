@@ -22,9 +22,13 @@ class OnboardingCoordinator: Coordinator {
     }
     
     func start() {
+        
         navigationController = UINavigationController(rootViewController: onboardingViewController)
         navigationController.navigationBar.isHidden = true
 
+        if UserDefaults.standard.bool(forKey: "isOnboarding") {
+            goToHome()
+        }
     }
       
 }

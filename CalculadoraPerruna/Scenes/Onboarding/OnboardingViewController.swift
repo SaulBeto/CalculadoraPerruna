@@ -20,6 +20,10 @@ class OnboardingViewController: UIViewController {
     var descs = [LocalizableKeys.Onboarding.firstScreenDesc, LocalizableKeys.Onboarding.secondScreenDesc]
     var imgs = ["PerroHumano","hands"]
     
+    deinit {
+        print("denit \(self)")
+    }
+    
     override func viewDidLayoutSubviews() {
         scrollWidth = scrollView.frame.size.width
         scrollHeight = scrollView.frame.size.height
@@ -83,6 +87,7 @@ class OnboardingViewController: UIViewController {
     
     @IBAction func skipButtonTapped(_ sender: Any) {
         coordinator?.goToHome()
+        UserDefaults.standard.set(true, forKey: "isOnboarding")
     }
     
 }
