@@ -64,6 +64,13 @@ class OnboardingViewController: UIViewController {
             
             imageView.contentMode = .scaleAspectFit
             imageView.center = CGPoint(x:scrollWidth/2,y: scrollHeight/2 - 50)
+            imageView.image = imageView.image?.withRenderingMode(.alwaysTemplate)
+
+            if traitCollection.userInterfaceStyle == .dark {
+                imageView.tintColor = .white
+            } else {
+                imageView.tintColor = .black
+            }
             
             let txt1 = UILabel(frame: CGRect(x: 32, y: imageView.frame.maxY + 30, width: scrollWidth - 64, height: 60))
             txt1.textAlignment = .center
