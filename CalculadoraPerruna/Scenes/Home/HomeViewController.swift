@@ -33,6 +33,8 @@ class HomeViewController: UIViewController {
         if #available(iOS 13.0, *) {
              overrideUserInterfaceStyle = .light
          }
+        
+        navigationController?.interactivePopGestureRecognizer?.isEnabled = false
     }
 
     
