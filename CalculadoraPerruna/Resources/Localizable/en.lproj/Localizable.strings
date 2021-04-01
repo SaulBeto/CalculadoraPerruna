@@ -24,3 +24,9 @@
 "info.title" = "Your dog's age";
 "info.description" = "A formula was developed to convert your dog's age into human years. This research is based on changes in DNA over time.\n\nThe lifespan of dogs can vary, however they all exhibit a similar pathological, physiological and developmental trajectory.\n\nTo achieve this, blood samples were drawn from 320 people, aged between 1 and 103 years. Also 104 Labradors, from puppies to 16 years.\n\nComparison with human methylomes reveals a non-linear relationship that translates the age of the dog to the human, resulting in a formula for calculating human age with that of dogs.";
 "info.linkTitle" = "Links for more information";
+
+
+//Life Expectancy
+"life.title" = "Life expectancy";
+"life.age" = "years";
+

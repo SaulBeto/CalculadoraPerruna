@@ -25,3 +25,6 @@
 "info.description" = "Se desarrolló una fórmula para convertir la edad de tu perro en años humanos. Esta investigación está basada en cambios en el ADN a lo largo del tiempo.\n\nEl tiempo de vida de los perros puede variar, sin embargo,  todos exhiben una trayectoria de desarrollo, fisiológica y patológica similar.\n\nPara lograr esto, se extrajeron muestras de sangre de 320 personas, con edades entre 1 y 103 años. Asimismo de 104 labradores, desde cachorros hasta de 16 años.\n\nLa comparación con los metilomas humanos revela una relación no lineal que traduce los años del perro al humano, lo cual permitió derivar una fórmula para calcular la edad humana con la de los perros.";
 "info.linkTitle" = "Links para mayor información";
 
+//Life Expectancy
+"life.title" = "Esperanza de vida";
+"life.age" = "años";

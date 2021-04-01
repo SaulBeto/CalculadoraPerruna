@@ -30,4 +30,9 @@ struct LocalizableKeys {
         static let description = "info.description".localized
         static let linkTitle = "info.linkTitle".localized
     }
+    
+    struct LifeExpectancy {
+        static let title = "life.title".localized
+        static let age = "life.age".localized
+    }
 }

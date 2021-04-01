@@ -83,7 +83,9 @@ class HomeViewController: UIViewController {
     
     @IBAction func infoButtonTapped(_ sender: Any) {
         
-        let infoViewController = InfoViewController()
+//        let infoViewController = InfoViewController()
+        let infoViewController = LifeExpectancyViewController()
+
         self.present(infoViewController, animated: true)
     }
     

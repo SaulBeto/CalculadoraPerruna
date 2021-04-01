@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LifeExpectancyViewController" customModule="CalculadoraPerruna" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="KD8-os-FHZ" id="i3H-GD-Fzq"/>
+                <outlet property="titleLabel" destination="V3x-cS-8MG" id="61X-Tl-yKY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="singleLineEtched" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KD8-os-FHZ">
+                    <rect key="frame" x="0.0" y="104" width="414" height="758"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Pps-3v-Unk"/>
+                        <outlet property="delegate" destination="-1" id="YB3-fK-L5L"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MQu-Ys-Wc7">
+                    <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Esperanza de vida" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V3x-cS-8MG">
+                            <rect key="frame" x="137" y="20" width="140" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="bNY-jP-mfs"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="KD8-os-FHZ" firstAttribute="top" secondItem="MQu-Ys-Wc7" secondAttribute="bottom" id="0fL-Xc-fKZ"/>
+                <constraint firstItem="MQu-Ys-Wc7" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="DBk-Gt-8Cw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MQu-Ys-Wc7" secondAttribute="trailing" id="ERk-Wn-64T"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KD8-os-FHZ" secondAttribute="trailing" id="gom-F8-Zgl"/>
+                <constraint firstItem="KD8-os-FHZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hDM-kx-Qxb"/>
+                <constraint firstItem="MQu-Ys-Wc7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="p8I-eG-SzX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="KD8-os-FHZ" secondAttribute="bottom" id="rtE-bs-LaN"/>
+            </constraints>
+            <point key="canvasLocation" x="-4.3478260869565224" y="73.660714285714278"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

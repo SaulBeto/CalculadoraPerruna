@@ -18,6 +18,12 @@
 		71B2C73825F81F090058C2EF /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B2C73625F81F090058C2EF /* InfoViewController.swift */; };
 		71B2C73925F81F090058C2EF /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71B2C73725F81F090058C2EF /* InfoViewController.xib */; };
 		7A02A4E325FC2D15009AE365 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A02A4E225FC2D15009AE365 /* Enums.swift */; };
+		7A7391BC261550F200274C2B /* LifeExpectancyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7391BA261550F200274C2B /* LifeExpectancyViewController.swift */; };
+		7A7391BD261550F200274C2B /* LifeExpectancyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A7391BB261550F200274C2B /* LifeExpectancyViewController.xib */; };
+		7A7391C6261552C700274C2B /* DogsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7391C4261552C700274C2B /* DogsTableViewCell.swift */; };
+		7A7391C7261552C700274C2B /* DogsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A7391C5261552C700274C2B /* DogsTableViewCell.xib */; };
+		7A7391CC261555F900274C2B /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7391CB261555F900274C2B /* UITableView+Extension.swift */; };
+		7A7391D2261557A200274C2B /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7391D1261557A200274C2B /* Dog.swift */; };
 		7AA803E5260D4A1B00EA7078 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA803E4260D4A1B00EA7078 /* AppCoordinator.swift */; };
 		7AA803EA260D4A5E00EA7078 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA803E9260D4A5E00EA7078 /* Coordinator.swift */; };
 		7AA803EF260D4AE000EA7078 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA803EE260D4AE000EA7078 /* HomeCoordinator.swift */; };
@@ -68,6 +74,12 @@
 		71B2C73625F81F090058C2EF /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		71B2C73725F81F090058C2EF /* InfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
 		7A02A4E225FC2D15009AE365 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		7A7391BA261550F200274C2B /* LifeExpectancyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeExpectancyViewController.swift; sourceTree = "<group>"; };
+		7A7391BB261550F200274C2B /* LifeExpectancyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LifeExpectancyViewController.xib; sourceTree = "<group>"; };
+		7A7391C4261552C700274C2B /* DogsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsTableViewCell.swift; sourceTree = "<group>"; };
+		7A7391C5261552C700274C2B /* DogsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DogsTableViewCell.xib; sourceTree = "<group>"; };
+		7A7391CB261555F900274C2B /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		7A7391D1261557A200274C2B /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		7AA803E4260D4A1B00EA7078 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		7AA803E9260D4A5E00EA7078 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		7AA803EE260D4AE000EA7078 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
@@ -132,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				7A02A4BE25FA85DB009AE365 /* Scenes */,
+				7A7391D02615578B00274C2B /* Models */,
 				7A02A4C425FA8627009AE365 /* Extensions */,
 				7A02A4E125FC2CFC009AE365 /* Utils */,
 				7A02A4C525FA8639009AE365 /* Resources */,
@@ -164,6 +177,7 @@
 		7A02A4BE25FA85DB009AE365 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				7A7391B92615505600274C2B /* Expectancy */,
 				712D746125E89EE500757637 /* LaunchScreen.storyboard */,
 				7AA80403260D555E00EA7078 /* Onboarding */,
 				7A02A4BF25FA85E3009AE365 /* Home */,
@@ -198,6 +212,7 @@
 				712D749B25E8A68100757637 /* UISlider+Extension.swift */,
 				7AAB29F52602D4E300465C8C /* String+Extension.swift */,
 				7AA803F3260D4BDB00EA7078 /* ViewController+Extension.swift */,
+				7A7391CB261555F900274C2B /* UITableView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -218,6 +233,25 @@
 				7AAB29FA2602D53800465C8C /* Constants.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		7A7391B92615505600274C2B /* Expectancy */ = {
+			isa = PBXGroup;
+			children = (
+				7A7391BB261550F200274C2B /* LifeExpectancyViewController.xib */,
+				7A7391BA261550F200274C2B /* LifeExpectancyViewController.swift */,
+				7A7391C5261552C700274C2B /* DogsTableViewCell.xib */,
+				7A7391C4261552C700274C2B /* DogsTableViewCell.swift */,
+			);
+			path = Expectancy;
+			sourceTree = "<group>";
+		};
+		7A7391D02615578B00274C2B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7A7391D1261557A200274C2B /* Dog.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		7AA80403260D555E00EA7078 /* Onboarding */ = {
@@ -354,9 +388,11 @@
 			files = (
 				7AAB29E72602D3BF00465C8C /* Localizable.strings in Resources */,
 				7AAB2A072602DD2500465C8C /* Home.storyboard in Resources */,
+				7A7391BD261550F200274C2B /* LifeExpectancyViewController.xib in Resources */,
 				712D746325E89EE500757637 /* LaunchScreen.storyboard in Resources */,
 				7AA8041D260D580D00EA7078 /* Onboarding.storyboard in Resources */,
 				712D746025E89EE500757637 /* Assets.xcassets in Resources */,
+				7A7391C7261552C700274C2B /* DogsTableViewCell.xib in Resources */,
 				71B2C73925F81F090058C2EF /* InfoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,19 +418,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A7391BC261550F200274C2B /* LifeExpectancyViewController.swift in Sources */,
 				7AA803E5260D4A1B00EA7078 /* AppCoordinator.swift in Sources */,
 				712D745B25E89EDF00757637 /* HomeViewController.swift in Sources */,
 				7AAB29F62602D4E300465C8C /* String+Extension.swift in Sources */,
 				712D745725E89EDF00757637 /* AppDelegate.swift in Sources */,
+				7A7391C6261552C700274C2B /* DogsTableViewCell.swift in Sources */,
 				71142E3525F9816F0051DF2A /* DogAge.swift in Sources */,
 				7AAB29FB2602D53800465C8C /* Constants.swift in Sources */,
 				7AA80406260D557A00EA7078 /* OnboardingViewController.swift in Sources */,
 				7A02A4E325FC2D15009AE365 /* Enums.swift in Sources */,
 				7AA803EF260D4AE000EA7078 /* HomeCoordinator.swift in Sources */,
+				7A7391CC261555F900274C2B /* UITableView+Extension.swift in Sources */,
 				7AA803EA260D4A5E00EA7078 /* Coordinator.swift in Sources */,
 				7AA803F4260D4BDB00EA7078 /* ViewController+Extension.swift in Sources */,
 				712D749C25E8A68100757637 /* UISlider+Extension.swift in Sources */,
 				7AA8040C260D558E00EA7078 /* OnboardingCoordinator.swift in Sources */,
+				7A7391D2261557A200274C2B /* Dog.swift in Sources */,
 				7AAB29F12602D45400465C8C /* LocalizableKeys.swift in Sources */,
 				71B2C73825F81F090058C2EF /* InfoViewController.swift in Sources */,
 			);
@@ -577,7 +617,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = GF4NKKX9LK;
 				INFOPLIST_FILE = CalculadoraPerruna/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -600,7 +640,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = GF4NKKX9LK;
 				INFOPLIST_FILE = CalculadoraPerruna/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;

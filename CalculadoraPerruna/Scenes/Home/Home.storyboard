@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -14,11 +14,11 @@
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="CalculadoraPerruna" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hVj-Hx-VBt">
-                                <rect key="frame" x="-20" y="270" width="100" height="90"/>
+                                <rect key="frame" x="-20" y="600" width="100" height="90"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="37L-OS-oKA"/>
@@ -26,17 +26,17 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pxj-Ga-S5G">
-                                <rect key="frame" x="0.0" y="300" width="320" height="180"/>
+                                <rect key="frame" x="0.0" y="630" width="390" height="180"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="25" translatesAutoresizingMaskIntoConstraints="NO" id="HnA-mP-1l6">
-                                        <rect key="frame" x="14" y="-10" width="292" height="31"/>
+                                        <rect key="frame" x="14" y="-10" width="362" height="31"/>
                                         <accessibility key="accessibilityConfiguration" identifier="dogAgeID"/>
                                         <connections>
                                             <action selector="valueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="1g1-7N-ZVk"/>
                                         </connections>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desliza el hueso para cambiar la edad " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEV-li-BXr">
-                                        <rect key="frame" x="7" y="78.5" width="306" height="23"/>
+                                        <rect key="frame" x="42" y="78.666666666666629" width="306" height="23"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -53,7 +53,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJz-Yc-U4g">
-                                <rect key="frame" x="115" y="137" width="90" height="100"/>
+                                <rect key="frame" x="150" y="467" width="90" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="CPM-cD-aZS"/>
                                     <constraint firstAttribute="height" constant="100" id="KDf-fe-wAa"/>
@@ -63,7 +63,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egF-6k-tta">
-                                <rect key="frame" x="95" y="-25.5" width="130" height="120"/>
+                                <rect key="frame" x="130" y="144" width="130" height="120"/>
                                 <accessibility key="accessibilityConfiguration" identifier="humanAgeLabelID"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="0DQ-d8-U5y"/>
@@ -74,7 +74,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="años humanos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EkM-AV-5Lo">
-                                <rect key="frame" x="104.5" y="104.5" width="111" height="22.5"/>
+                                <rect key="frame" x="139.66666666666666" y="274" width="111" height="22.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22.670000000000002" id="LrN-IV-f5q"/>
                                 </constraints>
@@ -83,7 +83,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="años perrunos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGN-XQ-pTi">
-                                <rect key="frame" x="111.5" y="227" width="97" height="23"/>
+                                <rect key="frame" x="146.66666666666666" y="557" width="97" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="23" id="Tny-gD-8Ug"/>
                                 </constraints>
@@ -92,7 +92,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10s-0V-oge">
-                                <rect key="frame" x="274" y="16" width="30" height="30"/>
+                                <rect key="frame" x="344" y="60" width="30" height="30"/>
                                 <accessibility key="accessibilityConfiguration" identifier="infoID"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="30" id="A9N-ec-Cal"/>

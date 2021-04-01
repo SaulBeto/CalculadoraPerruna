@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="145" id="KGk-i7-Jjw" customClass="DogsTableViewCell" customModule="CalculadoraPerruna" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="340" height="145"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="340" height="145"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vbQ-pa-EQI">
+                        <rect key="frame" x="0.0" y="0.0" width="340" height="35"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Dog" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDy-mj-CyV">
+                                <rect key="frame" x="16" y="6.5" width="308" height="22.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95332533119999996" green="0.6110798717" blue="0.47170221810000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="Fue-NN-zk4"/>
+                            <constraint firstItem="WDy-mj-CyV" firstAttribute="centerY" secondItem="vbQ-pa-EQI" secondAttribute="centerY" id="PR6-vS-smw"/>
+                            <constraint firstAttribute="trailing" secondItem="WDy-mj-CyV" secondAttribute="trailing" constant="16" id="vIR-nz-mue"/>
+                            <constraint firstItem="WDy-mj-CyV" firstAttribute="leading" secondItem="vbQ-pa-EQI" secondAttribute="leading" constant="16" id="zb3-h1-LAh"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 - 15 years" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBE-OR-ucL">
+                        <rect key="frame" x="31" y="79.5" width="100" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="7fa-I9-cAU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OTM-RF-gb2">
+                        <rect key="frame" x="211" y="45" width="90" height="90"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="airedale" translatesAutoresizingMaskIntoConstraints="NO" id="DaJ-zy-eKA">
+                                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DaJ-zy-eKA" firstAttribute="leading" secondItem="OTM-RF-gb2" secondAttribute="leading" id="33J-ca-MOQ"/>
+                            <constraint firstAttribute="bottom" secondItem="DaJ-zy-eKA" secondAttribute="bottom" id="6Tg-Vh-R5u"/>
+                            <constraint firstAttribute="height" constant="90" id="KEL-uX-xdD"/>
+                            <constraint firstAttribute="width" constant="90" id="aLO-lj-ERF"/>
+                            <constraint firstItem="DaJ-zy-eKA" firstAttribute="top" secondItem="OTM-RF-gb2" secondAttribute="top" id="eJE-ox-MIL"/>
+                            <constraint firstAttribute="trailing" secondItem="DaJ-zy-eKA" secondAttribute="trailing" id="wwd-ZP-M67"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vbQ-pa-EQI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="I3T-Jt-Dqe"/>
+                    <constraint firstItem="VBE-OR-ucL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="31" id="Lea-Uk-hDQ"/>
+                    <constraint firstAttribute="trailing" secondItem="vbQ-pa-EQI" secondAttribute="trailing" id="QUV-vO-bJH"/>
+                    <constraint firstItem="vbQ-pa-EQI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Zi8-If-Lat"/>
+                    <constraint firstAttribute="bottom" secondItem="OTM-RF-gb2" secondAttribute="bottom" constant="10" id="Zk7-jH-8WE"/>
+                    <constraint firstItem="OTM-RF-gb2" firstAttribute="top" secondItem="vbQ-pa-EQI" secondAttribute="bottom" constant="10" id="bCo-MD-rts"/>
+                    <constraint firstAttribute="trailing" secondItem="OTM-RF-gb2" secondAttribute="trailing" constant="39" id="u2G-Ir-rMw"/>
+                    <constraint firstItem="VBE-OR-ucL" firstAttribute="centerY" secondItem="OTM-RF-gb2" secondAttribute="centerY" id="xjp-Wa-wkB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dogImageView" destination="DaJ-zy-eKA" id="sDT-JD-8yP"/>
+                <outlet property="dogNameLabel" destination="WDy-mj-CyV" id="aaA-MC-kaf"/>
+                <outlet property="yearsLabel" destination="VBE-OR-ucL" id="1cq-EN-YoF"/>
+            </connections>
+            <point key="canvasLocation" x="-85.507246376811594" y="107.47767857142857"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="airedale" width="275" height="183"/>
+    </resources>
+</document>
