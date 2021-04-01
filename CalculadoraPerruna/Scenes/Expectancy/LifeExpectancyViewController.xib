@@ -22,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="singleLineEtched" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KD8-os-FHZ">
-                    <rect key="frame" x="0.0" y="104" width="414" height="758"/>
+                    <rect key="frame" x="0.0" y="184" width="414" height="678"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="Pps-3v-Unk"/>
@@ -32,30 +32,55 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MQu-Ys-Wc7">
                     <rect key="frame" x="0.0" y="44" width="414" height="60"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Esperanza de vida" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V3x-cS-8MG">
-                            <rect key="frame" x="137" y="20" width="140" height="21"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Esperanza de vida" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V3x-cS-8MG">
+                            <rect key="frame" x="117" y="19" width="180" height="22.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="180" id="uFc-PG-UTz"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.95332533119999996" green="0.6110798717" blue="0.47170221810000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="V3x-cS-8MG" firstAttribute="centerY" secondItem="MQu-Ys-Wc7" secondAttribute="centerY" id="VRA-yg-4gM"/>
+                        <constraint firstAttribute="height" constant="60" id="bNY-jP-mfs"/>
+                        <constraint firstItem="V3x-cS-8MG" firstAttribute="centerX" secondItem="MQu-Ys-Wc7" secondAttribute="centerX" id="jA3-yM-cP2"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7RH-bC-6rV">
+                    <rect key="frame" x="0.0" y="104" width="414" height="80"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Precisar la expectativa de vida es más fácil, descubre el de tu perro" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8s-zU-VAI">
+                            <rect key="frame" x="16" y="19" width="382" height="42"/>
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="60" id="bNY-jP-mfs"/>
+                        <constraint firstItem="M8s-zU-VAI" firstAttribute="leading" secondItem="7RH-bC-6rV" secondAttribute="leading" constant="16" id="8Pc-4k-DLe"/>
+                        <constraint firstAttribute="trailing" secondItem="M8s-zU-VAI" secondAttribute="trailing" constant="16" id="ANS-A0-rDy"/>
+                        <constraint firstItem="M8s-zU-VAI" firstAttribute="centerY" secondItem="7RH-bC-6rV" secondAttribute="centerY" id="MBc-Gb-6mi"/>
+                        <constraint firstAttribute="height" constant="80" id="TKF-8V-C14"/>
                     </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="KD8-os-FHZ" firstAttribute="top" secondItem="MQu-Ys-Wc7" secondAttribute="bottom" id="0fL-Xc-fKZ"/>
                 <constraint firstItem="MQu-Ys-Wc7" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="DBk-Gt-8Cw"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MQu-Ys-Wc7" secondAttribute="trailing" id="ERk-Wn-64T"/>
+                <constraint firstItem="KD8-os-FHZ" firstAttribute="top" secondItem="7RH-bC-6rV" secondAttribute="bottom" id="RAM-yi-L4U"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KD8-os-FHZ" secondAttribute="trailing" id="gom-F8-Zgl"/>
                 <constraint firstItem="KD8-os-FHZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hDM-kx-Qxb"/>
+                <constraint firstItem="7RH-bC-6rV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="k6f-IF-6Ho"/>
                 <constraint firstItem="MQu-Ys-Wc7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="p8I-eG-SzX"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="KD8-os-FHZ" secondAttribute="bottom" id="rtE-bs-LaN"/>
+                <constraint firstItem="7RH-bC-6rV" firstAttribute="top" secondItem="MQu-Ys-Wc7" secondAttribute="bottom" id="vXk-H4-jNe"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7RH-bC-6rV" secondAttribute="trailing" id="x60-wo-tY9"/>
             </constraints>
             <point key="canvasLocation" x="-4.3478260869565224" y="73.660714285714278"/>
         </view>

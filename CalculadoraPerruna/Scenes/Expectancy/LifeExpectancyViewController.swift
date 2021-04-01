@@ -8,7 +8,7 @@
 import UIKit
 
 class LifeExpectancyViewController: UIViewController {
-
+    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var tableView: UITableView! {
         didSet {
@@ -20,7 +20,6 @@ class LifeExpectancyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         titleLabel.text = LocalizableKeys.LifeExpectancy.title
         dogs = mapDogs()
         tableView.reloadData()
@@ -51,7 +50,7 @@ class LifeExpectancyViewController: UIViewController {
         
         return dogs
     }
-
+    
 }
 
 
@@ -66,16 +65,15 @@ extension LifeExpectancyViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(with: DogsTableViewCell.self, for: indexPath)
         cell.configure(with: dogs[indexPath.row])
         return cell
-
     }
     
 }
 
-extension HomeViewController: UITableViewDelegate {
+extension LifeExpectancyViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 150
     }
-    
+
 }
 
