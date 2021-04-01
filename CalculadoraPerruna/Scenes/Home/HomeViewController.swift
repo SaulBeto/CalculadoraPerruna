@@ -9,6 +9,8 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var infoButton: UIButton!
+    @IBOutlet weak var lifeExpectancyButton: UIButton!
     @IBOutlet weak var ageSlider: UISlider!
     @IBOutlet weak var backGroundIndicatorView: UIView!
     @IBOutlet weak var ageLabel: UILabel!
@@ -43,7 +45,18 @@ class HomeViewController: UIViewController {
         ageSlider.minimumTrackTintColor = .white
         ageSlider.maximumTrackTintColor = .white
         backGroundIndicatorView.layer.cornerRadius = backGroundIndicatorView.frame.width / 2
-        instructionsLabel.text = LocalizableKeys.Principal.instructions
+        instructionsLabel.text = LocalizableKeys.Home.instructions
+        
+        infoButton.layer.cornerRadius = 5
+        infoButton.layer.borderWidth = 1
+        infoButton.layer.borderColor = UIColor.white.cgColor
+        infoButton.setTitle(LocalizableKeys.Home.moreInfo, for: .normal)
+        
+        lifeExpectancyButton.layer.cornerRadius = 5
+        lifeExpectancyButton.layer.borderWidth = 1
+        lifeExpectancyButton.layer.borderColor = UIColor.white.cgColor
+        lifeExpectancyButton.setTitle(LocalizableKeys.LifeExpectancy.title, for: .normal)
+
     }
     
     private func setupAge(age: Int = 0) {
@@ -53,9 +66,9 @@ class HomeViewController: UIViewController {
         
         ageLabel.text = humanAge == 19  ? "1/2" : "\(Int(age))"
         humanAgeLabel.text = "\(humanAge)"
-        humanInformationLabel.text = LocalizableKeys.Principal.humanAge
-        ageInformationLabel.text = dogAge.isLessThanOneYear() ? LocalizableKeys.Principal.dogAge
-                                                              : LocalizableKeys.Principal.dogAges
+        humanInformationLabel.text = LocalizableKeys.Home.humanAge
+        ageInformationLabel.text = dogAge.isLessThanOneYear() ? LocalizableKeys.Home.dogAge
+                                                              : LocalizableKeys.Home.dogAges
     }
     
     private func getRoundedValue(value: Float) -> Int {
@@ -83,11 +96,14 @@ class HomeViewController: UIViewController {
     
     @IBAction func infoButtonTapped(_ sender: Any) {
         
-//        let infoViewController = InfoViewController()
-        let infoViewController = LifeExpectancyViewController()
-
+        let infoViewController = InfoViewController()
         self.present(infoViewController, animated: true)
     }
     
+    @IBAction func lifeExpectancyTapped(_ sender: Any) {
+        
+        let lifeViewController = LifeExpectancyViewController()
+        self.present(lifeViewController, animated: true)
+    }
 }
 

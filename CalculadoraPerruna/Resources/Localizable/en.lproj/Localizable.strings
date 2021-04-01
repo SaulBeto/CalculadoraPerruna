@@ -19,6 +19,7 @@
 "main.humanAge" = "human years";
 "main.dogAges" = "years dog";
 "main.dogAge" = "year dog";
+"main.moreInfo" = "More info";
 
 //Information
 "info.title" = "Your dog's age";

@@ -19,6 +19,8 @@
 "main.humanAge" = "años humanos";
 "main.dogAges" = "años perrunos";
 "main.dogAge" = "año perruno";
+"main.moreInfo" = "Más info";
+
 
 //Information
 "info.title" = "Edad de tu perrijo";

@@ -18,11 +18,12 @@ struct LocalizableKeys {
         static let start = "onboard.start".localized
     }
     
-    struct Principal {
+    struct Home {
         static let instructions = "main.instructions".localized
         static let humanAge = "main.humanAge".localized
         static let dogAges = "main.dogAges".localized
         static let dogAge = "main.dogAge".localized
+        static let moreInfo = "main.moreInfo".localized
     }
     
     struct Info {
